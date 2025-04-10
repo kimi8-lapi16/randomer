@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "dev": "parcel public/index.html --port 3003",
-    "test": "test"
+    "test": "test",
+    "health": "eslint . --fix; npx prettier --write **/*.{js,jsx,ts,tsx,css,html}"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   "homepage": "https://github.com/kimi8-lapi16/randomer#readme",
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "styled-components": "^6.1.17"
   },
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.2",
     "@typescript-eslint/eslint-plugin": "^8.29.1",
@@ -29,8 +32,10 @@
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
     "parcel": "^2.14.4",
     "prettier": "^3.5.3",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
   }
 }
