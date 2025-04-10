@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: randomer_app
+    build:
+      context: .
+    volumes:  
+      - .:/workspace # プロジェクトルートをマウント
+    command: /bin/sh -c "while sleep 1000; do :; done"

@@ -1,0 +1,36 @@
+{
+  "name": "randomer",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "parcel public/index.html --port 3003",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimi8-lapi16/randomer.git"
+  },
+  "author": "kimi8-lapi16",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimi8-lapi16/randomer/issues"
+  },
+  "homepage": "https://github.com/kimi8-lapi16/randomer#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.2",
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "parcel": "^2.14.4",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
