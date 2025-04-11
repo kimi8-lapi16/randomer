@@ -16,3 +16,6 @@
 - このリポジトリをcloneし、devcontainerで開く
 - コンテナが立ち上がったら、```npm run dev```で立ち上がる
 - 初回は```npm install```してから起動する
+
+## サンプル
+[SAMPLE](./src/asset/sample.png)
