@@ -9,11 +9,21 @@ export default function RandomSelector() {
   const callback = (value: string) => {
     setMembers((prev) => [...prev, value]);
   };
+  const remove = (index: number) => {
+    setMembers((prev) => [...prev.slice(0, index), ...prev.slice(index + 1)]);
+  }
+  const validate = (value: string) => {
+    const aset = new Set(members);
+    if (aset.has(value)) {
+      return false;
+    }
+    return members.length < 4; 
+  }
 
   return (
-    <section>
-      <Member members={members} callback={callback} />
+    <>
+      <Member members={members} callback={callback} remove={remove} validate={validate}/>
       <Lottery members={members} options={options} />
-    </section>
+    </>
   );
 }

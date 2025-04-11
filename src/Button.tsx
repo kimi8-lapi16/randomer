@@ -15,8 +15,8 @@ export default function Button(props: ButtonProps) {
 const StyledButton = styled.button`
   border-radius: 8px;
   border-color: transparent;
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   cursor: pointer;
   padding-inline: 1rem;
 `;

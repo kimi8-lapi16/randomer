@@ -21,10 +21,10 @@ export default function App() {
 }
 
 const MainContainer = styled.main`
-  background-color: #EEEEEE;
   width: 100%;
-  height: 100%;
+  height: 80dvh;
   margin-block: 1rem;
+  padding-inline: 1rem;
 `;
 
 const Title = styled.h1`
@@ -33,7 +33,7 @@ const Title = styled.h1`
   color: white;
   margin-block: 0px;
   padding: 1rem;
-  
+
 `;
 
 const Header = styled.header`

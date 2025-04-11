@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
 import Button from './Button';
 
 type LotteryProps = {
@@ -25,15 +26,24 @@ export default function Lottery(props: LotteryProps) {
     );
   };
   return (
-    <div>
+    <section>
       <Button label='抽選' onClick={lottery} />
-      {result.map((e, index) => {
-        return (
-          <div key={`lottery-${e.name}-${index}`}>
-            {e.name}: {e.result}
-          </div>
-        );
-      })}
-    </div>
+      <ol>
+        {result.map((e, index) => {
+          return (
+            <li key={`lottery-${e.name}-${index}`}>
+              <LotteryResultWrapper>
+                <dt>{e.name}</dt>
+                <dd>{e.result}</dd>
+              </LotteryResultWrapper>
+            </li>
+          );
+        })}
+      </ol>
+    </section>
   );
 }
+
+const LotteryResultWrapper = styled.dl`
+  display: flex;
+`;
