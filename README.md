@@ -13,6 +13,6 @@
 
 ## 起動方法
 - エディタはVSCodeを想定していますが、devcontainerが使えるものなら何でも良い
-- このリポジトリを起動し、devcontainerで開く
+- このリポジトリをcloneし、devcontainerで開く
 - コンテナが立ち上がったら、```npm run dev```で立ち上がる
 - 初回は```npm install```してから起動する
