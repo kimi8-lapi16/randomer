@@ -10,12 +10,10 @@ export default function App() {
       <Header>
         <Title>Random Selector</Title>
       </Header>
-      <MainContainer>        
+      <MainContainer>
         <RandomSelector />
       </MainContainer>
-      <Footer>
-        @kimi8-lapi16
-      </Footer>
+      <Footer>@kimi8-lapi16</Footer>
     </>
   );
 }
@@ -33,13 +31,10 @@ const Title = styled.h1`
   color: white;
   margin-block: 0px;
   padding: 1rem;
-
 `;
 
-const Header = styled.header`
-`;
+const Header = styled.header``;
 
 const Footer = styled.footer`
   text-align: center;
 `;
-

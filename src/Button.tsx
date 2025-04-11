@@ -1,5 +1,5 @@
-import React, { ButtonHTMLAttributes } from "react";
-import styled from "styled-components";
+import React, { ButtonHTMLAttributes } from 'react';
+import styled from 'styled-components';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & ButtonOptionalProps;
 
@@ -8,8 +8,8 @@ type ButtonOptionalProps = {
 };
 
 export default function Button(props: ButtonProps) {
-  const { label, ...remain } = props
-  return <StyledButton {...remain}>{label}</StyledButton>
+  const { label, ...remain } = props;
+  return <StyledButton {...remain}>{label}</StyledButton>;
 }
 
 const StyledButton = styled.button`

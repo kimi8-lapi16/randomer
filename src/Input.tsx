@@ -1,20 +1,20 @@
-import React, { InputHTMLAttributes } from "react";
-import styled from "styled-components";
+import React, { InputHTMLAttributes } from 'react';
+import styled from 'styled-components';
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & AdditionalInputProps;
 
 type AdditionalInputProps = {
   label: string;
-}
+};
 
 export default function Input(props: InputProps) {
-  const { label, ...remain } = props;  
+  const { label, ...remain } = props;
   return (
     <label>
       <LabelContainer>{label}</LabelContainer>
-      <InputContainer {...remain}/>
+      <InputContainer {...remain} />
     </label>
-  )
+  );
 }
 
 const InputContainer = styled.input`

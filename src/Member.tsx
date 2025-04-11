@@ -15,19 +15,19 @@ function InputMember(props: InputMemberProps) {
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.preventDefault();
       if (!validate(name)) {
-        return
+        return;
       }
       reflect(name);
-      setName('')
+      setName('');
     },
-    [name, reflect, setName]
+    [name, reflect, setName, validate]
   );
 
   return (
-      <form>
-        <Input label="名前" value={name} onChange={(e) => setName(e.currentTarget.value)}/>
-        <Button onClick={submit} label='追加'/>
-      </form>
+    <form>
+      <Input label="名前" value={name} onChange={(e) => setName(e.currentTarget.value)} />
+      <Button onClick={submit} label="追加" />
+    </form>
   );
 }
 
@@ -43,7 +43,7 @@ export default function Member(props: MemberProps) {
 
   return (
     <section>
-      <InputMember reflect={callback} validate={validate}/>
+      <InputMember reflect={callback} validate={validate} />
       <ol>
         {members.map((e, index) => {
           return (
@@ -51,7 +51,7 @@ export default function Member(props: MemberProps) {
               <LotteryResultWrapper>
                 <dt>{e}</dt>
                 <dd>
-                  <Button label="削除" onClick={() => remove(index)}/>
+                  <Button label="削除" onClick={() => remove(index)} />
                 </dd>
               </LotteryResultWrapper>
             </li>

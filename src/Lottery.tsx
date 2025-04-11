@@ -27,7 +27,7 @@ export default function Lottery(props: LotteryProps) {
   };
   return (
     <section>
-      <Button label='抽選' onClick={lottery} />
+      <Button label="抽選" onClick={lottery} />
       <ol>
         {result.map((e, index) => {
           return (
