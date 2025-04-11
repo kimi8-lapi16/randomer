@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import Button from './Button';
 
 type InputMemberProps = {
   reflect: (value: string) => void;
@@ -21,7 +22,7 @@ function InputMember(props: InputMemberProps) {
         <label>
           名前 <input onChange={(e) => setName(e.currentTarget.value)} />
         </label>
-        <button onClick={submit}>追加</button>
+        <Button onClick={submit} label='追加'/>
       </form>
     </div>
   );

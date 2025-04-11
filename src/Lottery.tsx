@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from './Button';
 
 type LotteryProps = {
   members: string[];
@@ -25,7 +26,7 @@ export default function Lottery(props: LotteryProps) {
   };
   return (
     <div>
-      <button onClick={lottery}>抽選</button>
+      <Button label='抽選' onClick={lottery} />
       {result.map((e, index) => {
         return (
           <div key={`lottery-${e.name}-${index}`}>
